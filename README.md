@@ -16,3 +16,12 @@ make
 - Download CSV file of heat flow data
 - Convert CSV file to a netcdf file
 - Check the md5sums of files are correct
+
+## Conda environment
+
+The netcdf file is created using the netCDF4 python package. If you have trouble reproducing the netcdf file, or running the python, try the conda environment file:
+```bash
+conda env create -f conda_env.yml
+source activate davies_py3
+make
+```
