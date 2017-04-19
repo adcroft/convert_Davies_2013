@@ -1,5 +1,7 @@
 # convert_Davies_2013
 
+[![Build Status](https://travis-ci.org/adcroft/convert_Davies_2013.svg?branch=master)](https://travis-ci.org/adcroft/convert_Davies_2013)
+
 For converting CSV data in supplemental material of Davies (2013) to netcdf format.
 
 Reference:

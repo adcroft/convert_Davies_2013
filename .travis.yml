@@ -1,0 +1,16 @@
+language: python
+
+python:
+  #- "2.7" no numpy?
+  #- "3.3" fails to install h5py?
+  - "3.4"
+  - "3.5"
+  - "3.6"
+
+install:
+  - pip install --upgrade pip
+  - pip install h5py
+  - pip install netcdf4
+
+script:
+  - make
