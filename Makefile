@@ -12,7 +12,7 @@ $(CSV_FILE):
 
 # Convert CSV file to netcdf
 $(NC_FILE): $(CSV_FILE)
-	python3 convert_Davies_2013.py
+	python convert_Davies_2013.py
 
 # Create md5 checksums file only if missing
 $(MD5_FILE): | $(CSV_FILE) $(NC_FILE)

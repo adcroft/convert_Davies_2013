@@ -3,13 +3,14 @@
 import csv
 import numpy
 import netCDF4
+import io
 
 # Read CSV file
 ni,nj = 180,90
 mean_HF = numpy.zeros((nj,ni))
 median_HF = numpy.zeros((nj,ni))
 error_HF = numpy.zeros((nj,ni))
-with open('ggge20271-sup-0003-Data_Table1_Eq_lon_lat_Global_HF.csv', newline='') as csvfile:
+with io.open('ggge20271-sup-0003-Data_Table1_Eq_lon_lat_Global_HF.csv', newline='') as csvfile:
     csvreader = csv.reader(csvfile)
     for row in csvreader:
         if row[0] == 'Longitude': continue
