@@ -9,7 +9,6 @@ python:
 
 install:
   - pip install --upgrade pip
-  - pip install h5py
   - pip install netcdf4
 
 script:
