@@ -8,7 +8,7 @@ all: check
 
 # Download CSV file from supplemental material
 $(CSV_FILE):
-	wget -O $@ "https://agupubs.onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fggge.20271&attachmentId=80046787"
+	wget -O $@ "https://agupubs.onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fggge.20271&file=ggge20271-sup-0003-Data_Table1_Eq_lon_lat_Global_HF.csv"
 
 # Convert CSV file to netcdf
 $(NC_FILE): $(CSV_FILE)
